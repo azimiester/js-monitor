@@ -1,0 +1,31 @@
+{
+  "name": "monitor-js",
+  "version": "1.0.0",
+  "description": "A Javascript based monitor (scheduling) implementation",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azimiester/js-monitor.git"
+  },
+  "keywords": [
+    "monitor",
+    "scheduling",
+    "javascript",
+    "js-monitor",
+    "sleeping-barber",
+    "dining-philosopher",
+    "data-structure"
+  ],
+  "author": "Syed Azeem Akhter",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/azimiester/js-monitor/issues"
+  },
+  "homepage": "https://github.com/azimiester/js-monitor#readme",
+  "dependencies": {
+    "webpack": "^3.8.1"
+  }
+}
