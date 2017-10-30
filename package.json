@@ -2,13 +2,20 @@
   "name": "monitor-js",
   "version": "1.0.0",
   "description": "A Javascript based monitor (scheduling) implementation",
-  "main": "src/index.js",
+  "main": "src/monitor.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/azimiester/js-monitor.git"
+  },
+  "dirs": {
+    "src": "src",
+    "bundle": "bundle"
+  },
+  "fileName": {
+    "bundle": "monitor-bundle.js"
   },
   "keywords": [
     "monitor",
@@ -26,6 +33,13 @@
   },
   "homepage": "https://github.com/azimiester/js-monitor#readme",
   "dependencies": {
-    "webpack": "^3.8.1"
+    "babel": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2"
   }
 }
