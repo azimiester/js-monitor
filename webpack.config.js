@@ -20,7 +20,7 @@ module.exports = {
 		reasons: true,
 		chunks: true
 	},
-	devtool: 'cheap-eval-source-map',
+	devtool: 'eval-source-map',
 	module: {
 		rules: [
 			{

@@ -9,11 +9,17 @@ class ReaderWriter {
 		this.OkToRead = new Condition();
 	}
 	read(reader) {
-		if (this._busy) {
-			OkToRead.wait(reader);
+		if (this._busy || this._readersCount != 0) {
+			reader = await OkToRead.wait(reader);
 		}
+		this._readersCount++;
 		console.log(this.data);
+		this._readersCount--;
+	}
+	write(writer){
+
 	}
 }
+rw = new ReaderWriter();
 
-alert("hi");
+setTimeout(rw.read)

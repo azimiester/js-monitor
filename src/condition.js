@@ -4,8 +4,7 @@ class Condition {
 	}
 
 	wait(name) {
-		let p = new Promise((res, rej) => {});
-		this._queue.push(p);
+		return Promise.resolve("test");
 	}
 
 	signal() {
