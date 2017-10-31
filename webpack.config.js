@@ -5,8 +5,22 @@ module.exports = {
 	entry: './index.js',
 	output: {
 		path: `${__dirname}/bundle`,
+		publicPath: '/bundle/',
 		filename: './monitor.bundle.js'
 	},
+	devServer: {
+		publicPath: '/bundle/',
+		historyApiFallback: true
+	},
+	resolve: {
+		extensions: ['.js']
+	},
+	stats: {
+		colors: true,
+		reasons: true,
+		chunks: true
+	},
+	devtool: 'cheap-eval-source-map',
 	module: {
 		rules: [
 			{

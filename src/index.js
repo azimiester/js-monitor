@@ -15,3 +15,5 @@ class ReaderWriter {
 		console.log(this.data);
 	}
 }
+
+alert("hi");
